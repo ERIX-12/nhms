@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@/*": ["src/*"],
+      "@/auth/*": ["src/modules/auth/*"],
+      "@/booking/*": ["src/modules/booking/*"],
+      "@/room/*": ["src/modules/room/*"],
+      "@/payment/*": ["src/modules/payment/*"],
+      "@/notification/*": ["src/modules/notification/*"],
+      "@/housekeeping/*": ["src/modules/housekeeping/*"],
+      "@/employee/*": ["src/modules/employee/*"],
+      "@/report/*": ["src/modules/report/*"],
+      "@/shared/*": ["src/shared/*"],
+      "@/config/*": ["src/config/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
+}
